@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match the person</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<details class="intro">
+  <summary class="w">MATCH THE PICTURES OF THE SAME PERSON</summary>
+
+  <div class="w-detail">
+    <p>EVEN IF TWO FACES LOOK IDENTICAL, CAN WE STILL SAY THEY BELONG TO THE SAME PERSON.
+WHERE MEMORY SPLITS, A SINGLE CHARACTER UNFOLDS INTO DIFFERENT LIVES AND DIFFERENT SELVES.</p><br><p>
+CLICK EACH FACE CARD TO READ THAT VERSION’S MEMORIES AND CIRCUMSTANCES, THEN TRY MATCHING THE CARDS YOU BELIEVE BELONG TO THE SAME PERSON.</p>
+  </div>
+</details>
+
+  <main class="viewport" id="viewport">
+  <section class="world" id="world" aria-label="person board">
+   <aside class="group-panel" id="groupPanel" hidden aria-live="polite">
+  <h3 id="groupPanelTitle">Group</h3>
+  <p id="groupPanelDesc"></p>
+</aside>
+  </section>
+</main>
+  
+  <section class="modal" id="modal" hidden aria-modal="true" role="dialog" aria-labelledby="modalName">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      <h2 id="modalName"></h2>
+      <p id="modalRole"></p>
+
+      <div class="modal-bio-wrap">
+        <p id="modalBioKo"></p>
+        <p id="modalBioEn"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
